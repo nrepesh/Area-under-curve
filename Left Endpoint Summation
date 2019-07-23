@@ -9,4 +9,4 @@ Module[{dx = \[Phi]/n, sum = 0},
   s = f[(i - 1) dx] dx;
   sum += s;
   ];
- sum]                                                                   (*Returns sum *)
+ sum]                                                                 \(*Returns sum *)
