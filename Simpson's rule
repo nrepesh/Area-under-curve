@@ -1,0 +1,8 @@
+f[\[Phi]_] := 1/Sqrt[
+  1 - 0.5^2 (Sin[\[Phi]])^2];                                         \(* Function *)
+a = 0;
+b = \[Pi]/4;
+
+Module[{simp = 0},
+ simp = (b - a)/6 (f[a] + 4 f[(a + b)/2] + f[b]);
+ simp]
