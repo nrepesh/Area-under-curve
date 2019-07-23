@@ -1,0 +1,12 @@
+f[\[Phi]_] := 1/Sqrt[
+  1 - 0.5^2 (Sin[\[Phi]])^2];                         (* Function *)
+\[Phi] = \[Pi]/4;
+n = Input["No. of Intervals You Want"];   (* Input Value *)
+
+Module[{dx = \[Phi]/n, sum = 0},
+ 
+ For[i = 1, i < n + 1, i++,                                  (* Loop goes from 1 to n^th term *)
+  s = f[(i - 1) dx] dx;
+  sum += s;
+  ];
+ sum]                                                                   (*Returns sum *)
